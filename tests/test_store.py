@@ -7,4 +7,4 @@ class T(unittest.TestCase):
         s = Store()
         s.add("apple", 2)
         s.add("apple", 3)
-        self.assertEqual(s.get_count("apple"), 5)
+        self.assertEqual(s.count("apple"), 5)
