@@ -10,7 +10,7 @@ class Store:
             raise ValueError("store full")
         self.items[name] = self.items.get(name, 0) + qty
 
-    def get_count(self, name):
+    def count(self, name):
         return self.items.get(name, 0)
 
     def low_stock(self):
