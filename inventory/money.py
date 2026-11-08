@@ -7,4 +7,7 @@ def total(prices):
 
 
 def fmt(cents, currency="USD"):
-    return f"{cents // 100}.{cents % 100:02d} {currency}"
+    if cents < 0:
+        return f"-{abs(cents) // 100}.{abs(cents) % 100:02d} {currency}"
+    else:
+        return f"{cents // 100}.{cents % 100:02d} {currency}"
